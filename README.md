@@ -6,16 +6,16 @@ I will restore my models here
 Cyclegan is a  model to do 'sytle transfer'.
 It contains 2 generators and 2 discriminators
 
-Genrator X : to generater a man's photo,based on a woman's photo(condition).
-Genrator Y : to generater a woman's photo,based on a man's photo(condition).
-discriminators X : to judge the man's photo, is it a fake one or real one?
-discriminators y : to judge the woman's photo, is it a fake one or real one?
+Genrator X : to generater a A's photo,based on a B's photo(condition)<br/>
+Genrator Y : to generater a B's photo,based on a A's photo(condition)<br/>
+discriminators X : to judge the A's photo, is it a fake one or real one?<br/>
+discriminators y : to judge the B's photo, is it a fake one or real one?<br/>
 
-Here's the training method:
-1.real man-> gen x -> fake woman -> dis y --> real or fake?
-                                 -> gen y -> fake man' --> loss with real man?
+Here's the training method:<br/>
+1.real A-> gen x -> fake B -> dis y --> real or fake?<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;-> gen y -> fake A' --> loss with real A?<br/>
 
-2.real woman->gen y -> fake man -> dis x --> real or fake?
-                                -> gen x -> fake woman' --> loss with real woman?
+2.real B->gen y -> fake A -> dis x --> real or fake?<br/>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;-> gen x -> fake B' --> loss with real B?<br/>
                                 
                                 
